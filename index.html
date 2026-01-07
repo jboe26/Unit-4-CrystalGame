@@ -5,62 +5,56 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+    <!-- Custom CSS -->
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
-        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
     <title>Crystal Collector</title>
 </head>
 
 <body>
     <div class="container">
-        <div class="row">
-            <div class="col-md-12">
 
-                <h1 class="title">Crystal Collector!</h1>
-                <br>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-12">
+        <h1 class="title mt-3">Crystal Collector!</h1>
 
-                <p class="instructions">
-                    You will be given a random number at the start of the game.<br>
-                    There are four crystals below. By clicking on a crystal you will add a specific amount of points to
-                    your
-                    total score.<br>You win the game by matching your total score to the random number, you lose the
-                    game if
-                    your total score goes above the random number.<br>The value of each crystal is hidden from you until
-                    you
-                    click on it.<br>
-                    Each time when the game starts, the game will change the values of each crystal.<br><br><br><br><br>
-                </p>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-1">
-            </div>
-            <div class="numberToGuess"><p id="goal">0</p>
-            </div>
-            <div class="winslosses">Wins: <p id="wins">0</p><br> Losses: <p id="losses">0</p></div>
-        </div>
-        <div class="row">
-            <div class="col-md-12">
-                <button class="crystal1"><img src="assets/images/ruby.jfif" height="75"></button>
-                <button class="crystal2"><img src="assets/images/diamond.gif" height="75"></button>
-                <button class="crystal3"><img src="assets/images/yellow.jfif" height="75"></button>
-                <button class="crystal4"><img src="assets/images/green.jfif" height="75"></button>
+        <p class="instructions mt-3">
+            You will be given a random number at the start of the game.<br>
+            Clicking a crystal adds a hidden amount to your score.<br>
+            Match your score to the random number to win.<br>
+            Go over the number and you lose.<br>
+            Crystal values change every game.
+        </p>
+
+        <div class="center-row mt-3">
+            <div class="numberToGuess text-center">
+                <p id="goal">0</p>
             </div>
 
+            <div class="winslosses text-center ml-3">
+                Wins: <p id="wins">0</p>
+                Losses: <p id="losses">0</p>
+            </div>
+        </div>
 
+        <div class="text-center mt-4">
+            <button class="crystal crystal1"><img src="assets/images/ruby.jfif" height="75"></button>
+            <button class="crystal crystal2"><img src="assets/images/diamond.gif" height="75"></button>
+            <button class="crystal crystal3"><img src="assets/images/yellow.jfif" height="75"></button>
+            <button class="crystal crystal4"><img src="assets/images/green.jfif" height="75"></button>
         </div>
-        <div class="row">
-            <div class="col-md-12">
-            </div>
-            <div class="totalScore">Your total score is: <p id="totalScore">0</p><h1 class="winorlose"></p>
-            </div>
+
+        <div class="totalScore text-center mt-4">
+            Your total score is:
+            <p id="totalScore">0</p>
+            <h1 class="winorlose"></h1>
         </div>
+
         <script src="assets/javascript/game.js"></script>
     </div>
 </body>

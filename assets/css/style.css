@@ -1,23 +1,22 @@
 body {
     background-color: lightblue;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    margin: 0px;
-    width: 400px;
+    margin: 0;
+    padding: 20px;
 }
 
 .title {
     background-color: orange;
     color: #fff;
     text-align: center;
-    width: 375px;
-    
+    padding: 10px;
 }
 
 .instructions {
-    background-color: tan;
-    color: green;
-    width: 350px;
-    height: 350px;
+    background-color: #fff;
+    color: #000000;
+    padding: 10px;
+    text-align: center;
 }
 
 .numberToGuess {
@@ -26,31 +25,43 @@ body {
     height: 145px;
     width: 200px;
     font-size: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 .winslosses {
     background-color: cyan;
     color: #000;
-    height: 140px;
-    width: 100px;
-    margin: 5px;
+    height: 145px;
+    width: 120px;
+    padding: 10px;
+    border-radius: 5px;
 }
 
 .totalScore {
     background-color: teal;
     width: 300px;
     height: 150px;
-    margin: auto;    
+    margin: auto;
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
 }
 
 #totalScore {
     font-size: 50px;
 }
 
-.crystal1 , .crystal2 , .crystal3 , .crystal4 {
-    margin: auto;
+.crystal {
+    margin: 10px;
+    border: none;
+    background: none;
 }
 
-
-
-
+.center-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
